@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5ie311oi211"]
+
+[ext_resource type="Texture2D" uid="uid://b2oeot3hh746d" path="res://Art/GatherersExterior/Objects/Grass/Rock_Tall1.png" id="1_64oan"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ngmtw"]
+radius = 7.0
+height = 14.0
+
+[node name="ResourceNode_RockTall" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_64oan")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("CapsuleShape2D_ngmtw")

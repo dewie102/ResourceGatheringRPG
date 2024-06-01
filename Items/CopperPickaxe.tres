@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="HarvestingTool" load_steps=4 format=3 uid="uid://bu5xvn2i1qgkc"]
+
+[ext_resource type="Texture2D" uid="uid://dtf35hntfprh4" path="res://Art/GatherersExterior/Tools/pickaxe_copper.png" id="1_o3cdr"]
+[ext_resource type="Script" path="res://Items/HarvestingTool.cs" id="1_ra3yj"]
+[ext_resource type="Resource" uid="uid://bsitja54lepse" path="res://Objects/Resources/Types/minable.tres" id="1_xrj0e"]
+
+[resource]
+script = ExtResource("1_ra3yj")
+EffectedTypes = [ExtResource("1_xrj0e")]
+minDamage = 1
+maxDamage = 1
+displayName = "Copper Pickaxe"
+Texture = ExtResource("1_o3cdr")

@@ -7,7 +7,7 @@
 [resource]
 script = ExtResource("1_ra3yj")
 EffectedTypes = [ExtResource("1_xrj0e")]
-minDamage = 1
-maxDamage = 1
+minAmount = 1
+maxAmount = 2
 displayName = "Copper Pickaxe"
 Texture = ExtResource("1_o3cdr")

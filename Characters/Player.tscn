@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=3 uid="uid://dep8v1k7284yo"]
+[gd_scene load_steps=53 format=3 uid="uid://dep8v1k7284yo"]
 
 [ext_resource type="Script" path="res://Characters/Player.cs" id="1_c4wsv"]
 [ext_resource type="Texture2D" uid="uid://b0gj51q38ia7v" path="res://Art/GatherersExterior/Characters/Gatherer-Swing_Down.png" id="1_yfvuj"]
@@ -12,6 +12,7 @@
 [ext_resource type="Script" path="res://Characters/HandEquip.cs" id="10_3klny"]
 [ext_resource type="Texture2D" uid="uid://dtf35hntfprh4" path="res://Art/GatherersExterior/Tools/pickaxe_copper.png" id="10_xhou5"]
 [ext_resource type="Resource" uid="uid://bu5xvn2i1qgkc" path="res://Items/CopperPickaxe.tres" id="12_faldi"]
+[ext_resource type="Script" path="res://Characters/Inventory.cs" id="13_5xgnu"]
 
 [sub_resource type="Animation" id="Animation_csawh"]
 length = 0.001
@@ -1349,3 +1350,6 @@ parameters/conditions/Swing = false
 parameters/Idle/blend_position = Vector2(0, 0)
 parameters/Swing/blend_position = Vector2(0, 0)
 parameters/Walk/blend_position = Vector2(0, 0)
+
+[node name="Inventory" type="Node" parent="."]
+script = ExtResource("13_5xgnu")

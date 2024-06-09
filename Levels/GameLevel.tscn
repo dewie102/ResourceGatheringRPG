@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://dledrnu65avie"]
+[gd_scene load_steps=5 format=3 uid="uid://dledrnu65avie"]
 
 [ext_resource type="PackedScene" uid="uid://dep8v1k7284yo" path="res://Characters/Player.tscn" id="1_i1no2"]
 [ext_resource type="PackedScene" uid="uid://b5ie311oi211" path="res://Objects/Resources/ResourceNodeRockTall.tscn" id="2_gtbau"]
+[ext_resource type="PackedScene" uid="uid://0t3aoeb2360q" path="res://UI/ResourceDisplay.tscn" id="3_udh4j"]
+[ext_resource type="PackedScene" uid="uid://vk70xpiww35r" path="res://Objects/Pickups/PickupBrownWood.tscn" id="4_j4pw5"]
 
 [node name="GameLevel" type="Node2D"]
 y_sort_enabled = true
@@ -25,3 +27,16 @@ position = Vector2(121, 49)
 
 [node name="ResourceNode_RockTall3" parent="." instance=ExtResource("2_gtbau")]
 position = Vector2(174, 94)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ResourceDisplay" parent="CanvasLayer" instance=ExtResource("3_udh4j")]
+
+[node name="PickupBrownWood" parent="." instance=ExtResource("4_j4pw5")]
+position = Vector2(109, 103)
+
+[node name="PickupBrownWood2" parent="." instance=ExtResource("4_j4pw5")]
+position = Vector2(75, 70)
+
+[node name="PickupBrownWood3" parent="." instance=ExtResource("4_j4pw5")]
+position = Vector2(155, 66)

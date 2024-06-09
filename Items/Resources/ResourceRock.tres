@@ -4,6 +4,7 @@
 [ext_resource type="Script" path="res://Items/Resources/ResourceItem.cs" id="1_kquka"]
 
 [resource]
+resource_name = "Rock"
 script = ExtResource("1_kquka")
 DisplayName = "Rock"
 Texture = ExtResource("1_7aa0k")

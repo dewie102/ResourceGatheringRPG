@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://b2oeot3hh746d" path="res://Art/GatherersExterior/Objects/Grass/Rock_Tall1.png" id="1_64oan"]
 [ext_resource type="Script" path="res://Objects/Resources/ResourceNode.cs" id="1_wauby"]
 [ext_resource type="Resource" uid="uid://bsitja54lepse" path="res://Objects/Resources/Types/minable.tres" id="2_hop5x"]
-[ext_resource type="PackedScene" uid="uid://cyxdvkakjqnlk" path="res://Objects/Pickups/Pickup_Rock.tscn" id="3_f5rab"]
+[ext_resource type="PackedScene" uid="uid://cyxdvkakjqnlk" path="res://Objects/Pickups/PickupRock.tscn" id="3_nv5n5"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ngmtw"]
 radius = 7.0
@@ -13,7 +13,7 @@ height = 14.0
 script = ExtResource("1_wauby")
 NodeTypes = Array[Object]([ExtResource("2_hop5x")])
 startingResources = 5
-pickupType = ExtResource("3_f5rab")
+pickupType = ExtResource("3_nv5n5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_64oan")

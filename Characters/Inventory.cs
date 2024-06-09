@@ -6,6 +6,10 @@ public partial class Inventory : Node
 {
 	[Export]
 	public Dictionary<ResourceItem, int> resources;
+
+	[Signal]
+	public delegate void ResourceCountChangedEventHandler(ResourceItem type, int newCount);
+
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -25,5 +29,6 @@ public partial class Inventory : Node
 		}
 
 		resources[type] += amount;
+		EmitSignal("ResourceCountChanged", type, resources[type]);
 	}
 }

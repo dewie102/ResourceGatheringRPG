@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ResourceItem" load_steps=3 format=3 uid="uid://bju56evx1elmt"]
+
+[ext_resource type="Script" path="res://Items/Resources/ResourceItem.cs" id="1_3jr77"]
+[ext_resource type="Texture2D" uid="uid://dtlgd8d78ntg6" path="res://Art/GatherersExterior/Resources/wood_brown.png" id="1_o3fe5"]
+
+[resource]
+resource_name = "Brown Wood"
+script = ExtResource("1_3jr77")
+DisplayName = "Brown Wood"
+Texture = ExtResource("1_o3fe5")

@@ -1309,7 +1309,7 @@ states/Walk/position = Vector2(601.333, 142.691)
 transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_0bt4d"), "Idle", "Walk", SubResource("AnimationNodeStateMachineTransition_n76e1"), "Walk", "Idle", SubResource("AnimationNodeStateMachineTransition_fwcew"), "Idle", "Swing", SubResource("AnimationNodeStateMachineTransition_j7xpu"), "Swing", "Idle", SubResource("AnimationNodeStateMachineTransition_xnbv5"), "Swing", "Walk", SubResource("AnimationNodeStateMachineTransition_ug6cp"), "Walk", "Swing", SubResource("AnimationNodeStateMachineTransition_4k8d5")]
 graph_offset = Vector2(0, -48.5521)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["player"]]
 motion_mode = 1
 script = ExtResource("1_c4wsv")
 

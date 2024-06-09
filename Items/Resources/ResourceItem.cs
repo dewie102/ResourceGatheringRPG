@@ -5,7 +5,7 @@ using System;
 public partial class ResourceItem : Resource
 {
     [Export]
-    string DisplayName { get; set; }
+    public string DisplayName { get; set; }
     [Export]
-    Texture2D Texture { get; set; }
+    public Texture2D Texture { get; set; }
 }

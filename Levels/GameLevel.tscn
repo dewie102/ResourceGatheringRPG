@@ -31,6 +31,9 @@ position = Vector2(174, 94)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="ResourceDisplay" parent="CanvasLayer" instance=ExtResource("3_udh4j")]
+offset_right = 81.0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 4.0
 
 [node name="PickupBrownWood" parent="." instance=ExtResource("4_j4pw5")]
 position = Vector2(109, 103)

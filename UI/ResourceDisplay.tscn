@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cdmropw0c2y6x" path="res://UI/ResourceItemDisplay.tscn" id="2_g4n3e"]
 
 [node name="ResourceDisplay" type="MarginContainer"]
-offset_right = 20.0
+offset_right = 81.0
 offset_bottom = 20.0
 theme_override_constants/margin_left = 5
 theme_override_constants/margin_top = 5

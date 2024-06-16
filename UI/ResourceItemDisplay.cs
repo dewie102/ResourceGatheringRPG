@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class ResourceItemDisplay : HFlowContainer
+public partial class ResourceItemDisplay : HBoxContainer
 {
 	private TextureRect textureRect;
 	private Label label;

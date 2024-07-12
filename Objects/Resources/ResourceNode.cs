@@ -1,6 +1,8 @@
 using Godot;
 using System;
 
+[Tool]
+[GlobalClass]
 public partial class ResourceNode : StaticBody2D
 {
     private int _currentResources;

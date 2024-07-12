@@ -1,22 +1,21 @@
 using Godot;
 using System;
 
-[Tool]
 public partial class HandEquip : Sprite2D
 {
-    private EquipableItem _equipedItem;
+    private EquipableItem _equippedItem;
 
 	[Export]
-	EquipableItem EquipedItem
+	public EquipableItem EquippedItem
 	{
 		set
 		{
-			_equipedItem = value;
-			Texture = _equipedItem.Texture;
+			_equippedItem = value;
+			Texture = _equippedItem.Texture;
 		}
 		get
 		{
-			return _equipedItem;
+			return _equippedItem;
 		}
 	}
 
@@ -36,9 +35,9 @@ public partial class HandEquip : Sprite2D
 
 	private void OnArea2DBodyEntered(Node2D body)
 	{
-		if(EquipedItem != null && EquipedItem.GetType().GetMethod("InteractWithBody") != null)
+		if(EquippedItem != null && EquippedItem.GetType().GetMethod("InteractWithBody") != null)
 		{
-			((HarvestingTool)EquipedItem).InteractWithBody(body);
+			((HarvestingTool)EquippedItem).InteractWithBody(body);
 		}
 	}
 }

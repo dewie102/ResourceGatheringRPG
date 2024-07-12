@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1mheipqxj8oq"]
+
+[ext_resource type="Script" path="res://UI/ItemButton.cs" id="2_kg8pf"]
+[ext_resource type="Resource" uid="uid://cdkqp10xph64h" path="res://Items/CopperAxe.tres" id="3_nnh6a"]
+
+[node name="ItemButton" type="Button"]
+script = ExtResource("2_kg8pf")
+item = ExtResource("3_nnh6a")

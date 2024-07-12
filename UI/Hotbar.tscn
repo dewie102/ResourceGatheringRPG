@@ -1,0 +1,47 @@
+[gd_scene load_steps=8 format=3 uid="uid://busc4stca3ouf"]
+
+[ext_resource type="Script" path="res://UI/Hotbar.cs" id="1_hkd6s"]
+[ext_resource type="PackedScene" uid="uid://b1mheipqxj8oq" path="res://UI/ItemButton.tscn" id="2_dlbkh"]
+[ext_resource type="Texture2D" uid="uid://bvy3qm2um7585" path="res://Art/GatherersExterior/Tools/hammer_copper.png" id="2_l7c5q"]
+[ext_resource type="Resource" uid="uid://bu5xvn2i1qgkc" path="res://Items/CopperPickaxe.tres" id="3_bp36w"]
+[ext_resource type="Texture2D" uid="uid://dtf35hntfprh4" path="res://Art/GatherersExterior/Tools/pickaxe_copper.png" id="3_u4po5"]
+[ext_resource type="Resource" uid="uid://ukg0dvfmfuro" path="res://Items/CopperHammer.tres" id="7_6g5pq"]
+[ext_resource type="Texture2D" uid="uid://c7c4mevw5aa1l" path="res://Art/GatherersExterior/Tools/axe_copper.png" id="7_e8vpg"]
+
+[node name="Hotbar" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hkd6s")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -29.0
+offset_right = 40.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 0
+columns = 10
+
+[node name="ItemButton" parent="GridContainer" instance=ExtResource("2_dlbkh")]
+layout_mode = 2
+icon = ExtResource("3_u4po5")
+item = ExtResource("3_bp36w")
+
+[node name="ItemButton2" parent="GridContainer" instance=ExtResource("2_dlbkh")]
+layout_mode = 2
+icon = ExtResource("2_l7c5q")
+item = ExtResource("7_6g5pq")
+
+[node name="ItemButton3" parent="GridContainer" instance=ExtResource("2_dlbkh")]
+layout_mode = 2
+icon = ExtResource("7_e8vpg")

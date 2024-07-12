@@ -11,7 +11,7 @@ height = 14.0
 
 [node name="ResourceNode_RockTall" type="StaticBody2D"]
 script = ExtResource("1_wauby")
-NodeTypes = Array[Object]([ExtResource("2_hop5x")])
+NodeTypes = [ExtResource("2_hop5x")]
 startingResources = 5
 pickupType = ExtResource("3_nv5n5")
 

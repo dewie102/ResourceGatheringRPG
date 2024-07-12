@@ -1,9 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://dledrnu65avie"]
+[gd_scene load_steps=14 format=3 uid="uid://dledrnu65avie"]
 
 [ext_resource type="PackedScene" uid="uid://dep8v1k7284yo" path="res://Characters/Player.tscn" id="1_i1no2"]
 [ext_resource type="PackedScene" uid="uid://b5ie311oi211" path="res://Objects/Resources/ResourceNodeRockTall.tscn" id="2_gtbau"]
 [ext_resource type="PackedScene" uid="uid://0t3aoeb2360q" path="res://UI/ResourceDisplay.tscn" id="3_udh4j"]
 [ext_resource type="PackedScene" uid="uid://vk70xpiww35r" path="res://Objects/Pickups/PickupBrownWood.tscn" id="4_j4pw5"]
+[ext_resource type="PackedScene" uid="uid://busc4stca3ouf" path="res://UI/Hotbar.tscn" id="4_shymc"]
 [ext_resource type="Texture2D" uid="uid://mvymcb8ifijg" path="res://Art/GatherersExterior/Tilesets/tileset_grass.png" id="5_wbrdt"]
 [ext_resource type="Texture2D" uid="uid://dcsg13l0520l1" path="res://Art/GatherersExterior/Tilesets/tileset_water.png" id="6_vjarr"]
 [ext_resource type="Texture2D" uid="uid://7l53nvpg7x20" path="res://Art/GatherersExterior/Tilesets/tileset_floating_bridge.png" id="7_joqc3"]
@@ -144,6 +145,8 @@ position = Vector2(174, 94)
 [node name="ResourceDisplay" parent="CanvasLayer" instance=ExtResource("3_udh4j")]
 size_flags_vertical = 3
 size_flags_stretch_ratio = 4.0
+
+[node name="Hotbar" parent="CanvasLayer" instance=ExtResource("4_shymc")]
 
 [node name="PickupBrownWood" parent="." instance=ExtResource("4_j4pw5")]
 position = Vector2(109, 103)

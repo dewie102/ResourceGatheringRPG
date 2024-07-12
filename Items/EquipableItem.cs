@@ -1,13 +1,7 @@
 using Godot;
 using System;
 
-[Tool]
-[GlobalClass]
-public partial class EquipableItem : Resource
+public partial class EquipableItem : Item
 {
-    [Export]
-    public string displayName { get; set; }
-
-    [Export]
-    public Texture2D Texture { get; set; }
+    
 }

@@ -26,6 +26,7 @@ public partial class HandEquip : Sprite2D
 	{
 		equipHitbox = GetNode<Area2D>("Area2D");
 		equipHitbox.BodyEntered += OnArea2DBodyEntered;
+		equipHitbox.Monitoring = false;
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.

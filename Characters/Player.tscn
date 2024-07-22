@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=3 uid="uid://dep8v1k7284yo"]
+[gd_scene load_steps=53 format=3 uid="uid://dep8v1k7284yo"]
 
 [ext_resource type="Script" path="res://Characters/Player.cs" id="1_c4wsv"]
 [ext_resource type="Texture2D" uid="uid://b0gj51q38ia7v" path="res://Art/GatherersExterior/Characters/Gatherer-Swing_Down.png" id="1_yfvuj"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://8bvrib75gdvy" path="res://Art/GatherersExterior/Characters/Gatherer-Swing_Right.png" id="9_a1kb2"]
 [ext_resource type="Script" path="res://Characters/HandEquip.cs" id="10_3klny"]
 [ext_resource type="Texture2D" uid="uid://dtf35hntfprh4" path="res://Art/GatherersExterior/Tools/pickaxe_copper.png" id="10_xhou5"]
+[ext_resource type="Resource" uid="uid://bu5xvn2i1qgkc" path="res://Items/CopperPickaxe.tres" id="12_fy1fk"]
 [ext_resource type="Script" path="res://Characters/Inventory.cs" id="13_5xgnu"]
 
 [sub_resource type="Animation" id="Animation_csawh"]
@@ -60,7 +61,7 @@ tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
+"update": 1,
 "values": [Vector2(-1, 1)]
 }
 tracks/4/type = "value"
@@ -72,7 +73,7 @@ tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
+"update": 1,
 "values": [Vector2(-14, 0)]
 }
 tracks/5/type = "value"
@@ -84,7 +85,7 @@ tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
+"update": 1,
 "values": [0.0]
 }
 tracks/6/type = "value"
@@ -544,6 +545,18 @@ tracks/6/keys = {
 "update": 1,
 "values": [0]
 }
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("HandEquip/Area2D:monitoring")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
 
 [sub_resource type="Animation" id="Animation_x1i31"]
 resource_name = "swing_left"
@@ -632,6 +645,18 @@ tracks/6/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("HandEquip/Area2D:monitoring")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
 }
 
 [sub_resource type="Animation" id="Animation_qxs1p"]
@@ -722,6 +747,18 @@ tracks/6/keys = {
 "update": 1,
 "values": [0]
 }
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("HandEquip/Area2D:monitoring")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
 
 [sub_resource type="Animation" id="Animation_bid3t"]
 resource_name = "swing_up"
@@ -810,6 +847,18 @@ tracks/6/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [-1]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("HandEquip/Area2D:monitoring")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
 }
 
 [sub_resource type="Animation" id="Animation_so4s0"]
@@ -1331,8 +1380,10 @@ position = Vector2(-14, 0)
 scale = Vector2(-1, 1)
 texture = ExtResource("10_xhou5")
 script = ExtResource("10_3klny")
+EquippedItem = ExtResource("12_fy1fk")
 
 [node name="Area2D" type="Area2D" parent="HandEquip"]
+monitoring = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HandEquip/Area2D"]
 position = Vector2(2.5, -2)
